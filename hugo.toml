@@ -1,5 +1,37 @@
 baseURL = "https://dosakkhayo.github.io/"
 languageCode = "ko"
-title = "불법이야기"
+title = "도삭카요의 불교 공부"
 theme = "yue"
 publishDir = "docs"
+
+[menu]
+
+  [[menu.main]]
+  identifier = "home"
+  name = "Home"
+  url = "/"
+  weight = 1
+
+  [[menu.main]]
+  identifier = "posts"
+  name = "Posts"
+  url = "/posts/"
+  weight = 2
+
+  [[menu.main]]
+  identifier = "tags"
+  name = "Tags"
+  url = "/tags/"
+  weight = 3
+
+  [[menu.main]]
+  identifier = "categories"
+  name = "Categories"
+  url = "/categories/"
+  weight = 4
+
+  [[menu.main]]
+  identifier = "about"
+  name = "About"
+  url = "/about/"
+  weight = 5

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on 불법이야기</title>
+    <title>Posts on 도삭카요의 불교 공부</title>
     <link>https://dosakkhayo.github.io/posts/</link>
-    <description>Recent content in Posts on 불법이야기</description>
+    <description>Recent content in Posts on 도삭카요의 불교 공부</description>
     <generator>Hugo</generator>
     <language>ko</language>
     <lastBuildDate>Thu, 15 May 2025 00:00:00 +0000</lastBuildDate>
@@ -14,6 +14,13 @@
       <pubDate>Thu, 15 May 2025 00:00:00 +0000</pubDate>
       <guid>https://dosakkhayo.github.io/posts/%EC%B2%AB%EA%B8%80/</guid>
       <description>&lt;p&gt;이것은 Hugo + Yue 테마로 만든 첫 번째 글입니다.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://dosakkhayo.github.io/posts/%EB%AC%B4%EC%A0%9C/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://dosakkhayo.github.io/posts/%EB%AC%B4%EC%A0%9C/</guid>
+      <description>&lt;p&gt;테스트&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

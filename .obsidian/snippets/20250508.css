@@ -1,0 +1,244 @@
+/***************************************/
+/* last_updated_2025_05_08
+/* 공통 적용 사항들
+/* 다크 테마
+/* 라이트 테마
+/***************************************/
+
+
+/***************************************/
+/* 공통 적용 사항들
+/***************************************/
+
+/* 웹 폰트 호출 */
+@font-face {
+  font-family: 'Pretendard-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Pretendard-Bold';
+  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Pretendard-SemiBold';
+  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-SemiBold.woff') format('woff');
+}
+
+/* 본문 폰트 설정 */
+body {
+  font-family: 'Pretendard-Regular';
+  font-size: 16px;
+  text-align: justify;
+}
+
+/* heading 폰트 설정 */
+.markdown-rendered h1, .HyperMD-header.HyperMD-header-1.cm-line,
+.markdown-rendered h2, .HyperMD-header.HyperMD-header-2.cm-line,
+.markdown-rendered h3, .HyperMD-header.HyperMD-header-3.cm-line,
+.markdown-rendered h4, .HyperMD-header.HyperMD-header-4.cm-line,
+.markdown-rendered h5, .HyperMD-header.HyperMD-header-5.cm-line,
+.markdown-rendered h6, .HyperMD-header.HyperMD-header-6.cm-line {
+  font-family: 'Pretendard-SemiBold';
+  font-weight: normal;
+}
+
+/* bold체 폰트 설정 */
+
+strong, .cm-strong {
+  font-family: 'Pretendard-Bold';
+  font-weight: normal;
+  font-size: 16px;
+}
+
+/* 임베드 설정 */
+
+.markdown-embed {
+  border-left: none !important;
+  padding-left: 0 !important;
+}
+
+.markdown-embed-title {
+  font-size: 0%;
+}
+
+
+/* Links 색상 설정 */
+
+body{
+  --link-color: var(--text-accent);
+  --link-external-color: var(--text-accent);
+
+  --link-color-hover: var(--text-normal);
+  --link-external-color-hover: var(--text-normal);
+
+  --link-unresolved-color: var(--text-error);
+  --link-unresolved-color-hover: var(--text-error);
+  --link-unresolved-decoration-color: var(--text-error);
+
+  --link-decoration-hover: underline;
+  --link-external-decoration-hover: underline;
+  --link-unresolved-opacity: unset;
+  --link-external-decoration: none;
+  --link-decoration: none;
+}
+
+/* 하이라이트 배경 제거 */
+body.theme-light .markdown-preview-view mark,
+body.theme-dark .markdown-preview-view mark,
+body.theme-light .cm-s-obsidian span.cm-highlight,
+body.theme-dark .cm-s-obsidian span.cm-highlight {
+  background: none !important;
+}
+
+/* 라이트 모드 색상 */
+body.theme-light .markdown-preview-view mark,
+body.theme-light .cm-s-obsidian span.cm-highlight {
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: var(--text-accent);
+}
+
+/* 다크 모드 색상 */
+body.theme-dark .markdown-preview-view mark,
+body.theme-dark .cm-s-obsidian span.cm-highlight {
+  color: #ed9d13 !important; /* 어두운 배경에서 잘 보이는 색 */
+  font-weight: bold;
+}
+
+
+/***************************************/
+/* 라이트 테마
+/***************************************/
+
+.theme-light{
+
+  /* main color
+  /***************************************/
+    
+  /* 메인 글쓰는 쪽 색상 */
+  --background-primary:#ffffff;
+    
+  /* 설정 복수 선택지 색상 */
+  --interactive-normal:var(--background-primary);  
+    
+  /* 사이드 바 및 마우스 오른쪽 클릭 창 색상 */
+  --background-secondary:var(--background-secondary-alt);
+    
+  /* second color
+  /***************************************/
+    
+  /* 탭 쪽 색상 (background-primary와 구분되는 비슷한 색)*/
+  --background-secondary-alt:#fffefb;
+    
+  /* 입력창 바탕 색상 */
+  --background-modifier-form-field:var(--background-secondary-alt);
+    
+  /* 코드블럭 색상 */
+  --background-primary-alt:var(--background-secondary-alt);
+    
+  /* normal text color
+  /***************************************/
+    
+  /* 본문 텍스트 색상 */
+  --text-normal:#29261B;
+    
+  /* 창들 분리하는 선 색상 (text-normal에서 투명하게)*/
+  --background-modifier-border:#29261b9d;
+    
+    
+  /* error color
+  /***************************************/
+    
+  /* 에러 메시지 글씨 색상 */
+  --text-error:#dc322f;
+  
+  /* 에러 알림 색상 */
+  --background-modifier-error:var(--text-error);
+    
+  /* hover (text-error와 대비되는 색) */
+  --background-modifier-error-hover:var(--text-accent);  
+    
+    
+  /* interactive color
+  /***************************************/
+    
+  /* hover */
+  --interactive-hover:#23211a25;
+    
+  /* hover */
+  --interactive-accent-hover:var(--interactive-hover);  
+    
+  /* 설정 버튼 및 인용 표현 옆 막대 색상 (interactive-hover보다 약간 투명하게) */
+  --interactive-accent:var(--background-modifier-border);  
+    
+    
+  /* faint color
+  /***************************************/
+    
+  /* bullet이나 숫자 등 흐린 색상*/
+  --text-faint:#93a1a1;
+    
+  /* 코드블럭 텍스트 및 리본 메뉴, 사이드바 아이콘 색상 */
+  --text-muted:var(--text-faint);
+    
+    
+  /* text accent color
+  /***************************************/
+    
+  /* 텍스트 accent 색상 */
+  --text-accent:#4d64e6;
+    
+  /* 텍스트 accent hover 색상 */
+  --text-accent-hover:#4d64e684;  
+    
+  /* 텍스트 하이라이트 색상 */
+  --text-highlight-bg:#e1dc4740;
+    
+  /* 선택된 텍스트의 배경 색상 */
+  --text-selection:var(--text-highlight-bg);
+    
+  /* header 색상*/
+  --text-title:var(--text-normal);
+  --heading-formatting:var(--text-title);
+  --h1-color:var(--text-title);
+  --h2-color:var(--text-title);
+  --h3-color:var(--text-title);
+  --h4-color:var(--text-title);
+  --h5-color:var(--text-title);
+  --h6-color:var(--text-title);
+  }
+
+
+/***************************************/
+/* 다크 테마
+/***************************************/
+
+.theme-dark{
+
+  /* normal text color
+  /***************************************/
+    
+  /* 본문 텍스트 색상 */
+  --text-normal:#ebebeb;
+
+  /* faint color
+  /***************************************/
+    
+  /* bullet이나 숫자 등 흐린 색상*/
+  --text-faint:#93a1a1;
+    
+  /* 코드블럭 텍스트 및 리본 메뉴, 사이드바 아이콘 색상 */
+  --text-muted:var(--text-faint);
+
+  /* header 색상*/
+  --text-title:var(--text-normal);
+  --heading-formatting:var(--text-title);
+  --h1-color:var(--text-title);
+  --h2-color:var(--text-title);
+  --h3-color:var(--text-title);
+  --h4-color:var(--text-title);
+  --h5-color:var(--text-title);
+  --h6-color:var(--text-title);
+  }

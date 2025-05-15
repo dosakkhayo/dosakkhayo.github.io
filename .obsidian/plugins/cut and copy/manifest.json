@@ -1,0 +1,10 @@
+{
+	"id": "cut-and-copy",
+	"name": "cut and copy",
+	"version": "1.0.0",
+	"minAppVersion": "0.12.0",
+	"description": "커서가 위치한 행을 잘라내고 클립보드에 복사합니다.",
+	"author": "dosakkhayo",
+	"authorUrl": "https://github.com/dosakkhayo",
+	"main": "main.js"
+}

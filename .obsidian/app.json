@@ -1,0 +1,36 @@
+{
+  "mobileToolbarCommands": [
+    "editor:indent-list",
+    "editor:unindent-list",
+    "editor:undo",
+    "editor:redo",
+    "editor:swap-line-up",
+    "editor:swap-line-down",
+    "editor:open-search",
+    "file-explorer:move-file",
+    "cut-and-copy:cut-current-line",
+    "cut-and-copy:copy-current-line",
+    "taggednotes:show-notes-with-tag"
+  ],
+  "mobilePullAction": "workspace:close",
+  "mobileQuickRibbonItem": "zk-prefixer:새 고유 노트 생성",
+  "showInlineTitle": true,
+  "promptDelete": false,
+  "readableLineLength": false,
+  "showLineNumber": false,
+  "foldIndent": true,
+  "foldHeading": true,
+  "spellcheck": false,
+  "trashOption": "local",
+  "alwaysUpdateLinks": true,
+  "pdfExportSettings": {
+    "includeName": true,
+    "pageSize": "Letter",
+    "landscape": false,
+    "margin": "0",
+    "downscalePercent": 100
+  },
+  "newFileLocation": "root",
+  "newFileFolderPath": "/",
+  "showUnsupportedFiles": true
+}
